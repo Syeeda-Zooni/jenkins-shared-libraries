@@ -1,4 +1,5 @@
 def call(String ProjectName,String ImageTag){
+  echo "Pushing the image to the docker hub"
   withCredentials([usernamePassword(
                     credentialsId:"dockerhubCred",
                     passwordVariable:"dockerhubPass",
